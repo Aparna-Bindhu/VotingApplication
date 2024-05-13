@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\aparna.b\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\aparna.b\\.nuget\\packages"
+    ]
+  }
+}
