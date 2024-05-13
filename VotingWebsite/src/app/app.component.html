@@ -1,0 +1,31 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div>
+  <div class="jumbotron text-center">
+    <h1>{{ title }}</h1>
+    <p>Your vote, your choice, your future.</p>
+    <div>
+      <button (click)="hideVisibityForCastVotePage()">Home</button>
+      <button (click)="setVisibityForCastVotePage()">Cast Vote</button>
+    </div>
+  </div>
+</div>
+<div class="container-fluid" *ngIf="!isCastVotePageVisible">
+  <div class="row">
+    <div class="col-xs-12 col-md-1">
+    </div>
+    <div class="col-xs-12 col-md-5">
+      <app-voters></app-voters>
+    </div>
+    <div class="col-xs-12 col-md-5">
+      <app-candidates></app-candidates>
+    </div>
+    <div class="col-xs-12 col-md-1">
+    </div>
+  </div>
+  </div>
+
+<app-castvote *ngIf="isCastVotePageVisible"></app-castvote>
+
+
+
+

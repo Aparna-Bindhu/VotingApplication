@@ -1,0 +1,29 @@
+body {
+  text-align: center;
+}
+
+span {
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+.icon-green {
+  color: green;
+}
+
+.icon-red {
+  color: red;
+}
+
+.icon-large {
+  font-size: 25px;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 5px 65px;
+}

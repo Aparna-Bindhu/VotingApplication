@@ -1,0 +1,56 @@
+<div style="text-align:center">
+        <table>
+          <thead>
+            <tr>
+              <th colspan="2" style="text-align:center">
+                Voters
+                <button type="button" data-toggle="modal" data-target="#myModal" style="background: none;">
+                <span class="glyphicon glyphicon-plus"></span>
+                </button>
+              </th>
+            </tr>
+          </thead>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>HasVoted</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let voter of votersModel" id="{{voter.Id}}">
+              <td>{{ voter.Name }}</td>
+              <td>
+                <span *ngIf="voter.HasVoted" class="glyphicon glyphicon-ok icon-green"></span>
+                <span *ngIf="!voter.HasVoted" class="glyphicon glyphicon-remove icon-red"></span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+
+<!-- Modal-->
+<div class="modal fade" id="myModal" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Add Voters</h4>
+      </div>
+      <div class="modal-body">
+        <form class="form-group">
+          <input type="text" placeholder="Enter voter name here" id="name" style="padding:0px; margin-right:15px" class="form-control" [(ngModel)]="newVoterName" name="newVoterName" />
+          <div class="error-message name-error icon-red" *ngIf="showError">{{erroMessage}}</div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" #closeButton>Close</button>
+        <button type="button" class="btn btn-success" (click)="AddNewVoter()">Add</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+

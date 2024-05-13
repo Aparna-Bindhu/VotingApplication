@@ -1,0 +1,9 @@
+D:\Voting\Voting.Data\bin\Debug\Voting.Data.dll
+D:\Voting\Voting.Data\bin\Debug\Voting.Data.pdb
+D:\Voting\Voting.Data\bin\Debug\Newtonsoft.Json.dll
+D:\Voting\Voting.Data\bin\Debug\Newtonsoft.Json.xml
+D:\Voting\Voting.Data\obj\Debug\Voting.Data.csproj.CoreCompileInputs.cache
+D:\Voting\Voting.Data\obj\Debug\Voting.Data.csproj.CopyComplete
+D:\Voting\Voting.Data\obj\Debug\Voting.Data.dll
+D:\Voting\Voting.Data\obj\Debug\Voting.Data.pdb
+D:\Voting\Voting.Data\obj\Debug\Voting.Data.csproj.AssemblyReference.cache
